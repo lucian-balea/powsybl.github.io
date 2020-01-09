@@ -3,7 +3,7 @@ title: dynamic-simulation
 layout: default
 ---
 
-The `dynamic-simulation` command is used to run dynamic simulations on one or several network.
+The `dynamic-simulation` command is used to run dynamic simulations on the network.
 
 # Usage
 ```shell
