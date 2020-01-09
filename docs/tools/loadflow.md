@@ -51,7 +51,7 @@ overload one or many parameters using the `-E property=value` parameter. The pro
 Refer to the documentation page of each [exporter](../iidm/exporter/index.md) to know their specific configuration.
 
 ### import-parameters
-Use th `--import-parameters` parameter to specify the path of the configuration file of the importer. It is possible to
+Use the `--import-parameters` parameter to specify the path of the configuration file of the importer. It is possible to
 overload one or many parameters using the `-I property=value` parameter. The properties depend on the input format.
 Refer to the documentation page of each [importer](../iidm/importer/index.md) to know their specific configuration.
 

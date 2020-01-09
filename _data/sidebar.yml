@@ -75,6 +75,8 @@ menu:
         url: "/docs/tools/compare-security-analysis-results.html"
       - name: "convert-network"
         url: "/docs/tools/convert-network.html"
+      - name: "dynamic-simulation"
+        url: "/docs/tools/dynamic-simulation.html"
       - name: "loadflow"
         url: "/docs/tools/loadflow.html"
       - name: "loadflow-validation"

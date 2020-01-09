@@ -32,6 +32,7 @@ unavailable. The commands are classified in themes, to help identifying their pu
 | Application file system | [afs](afs.md) | Application File System CLI |
 | Computation | [action-simulator](action-simulator.md) | Run a remedial actions simulation |
 | Computation | [compare-security-analysis-results](compare-security-analysis-results.md) | Compare security analysis results |
+| Computation | [dynamic-simulation](dynamic-simulation.md) | Run a dynamic simulation |
 | Computation | [loadflow](loadflow.md) | Run a loadflow computation |
 | Computation | [loadflow-validation](loadflow-validation.md) | Validate the load-flow results of a network |
 | Computation | [run-impact-analysis](run-impact-analysis.md) | Run an impact analysis |
