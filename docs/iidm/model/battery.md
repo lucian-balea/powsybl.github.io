@@ -14,10 +14,12 @@ A battery on the electric grid is an energy storage device that is either capabl
 | q0 | double | MVar | yes | - | The Constant reactive power |
 | MinP | double | MW | yes | - | The Minimal active power |
 | MaxP | double | MW | yes | - | The Maximum active power |
-| RegulatingTerminal | `TerminalExt` | - | no | - | The terminal used for regulation |
 
 ## Active Limits
 The minimal active power is expected to be lower than the maximal active power.
+
+## Reactive Limits
+A set of reactive limits can be associated to a battery. All the reactive limits modelings available in the library are described [here](reactiveLimits.md).
 
 # Examples
 This example shows how to create a new `Battery` in the network:

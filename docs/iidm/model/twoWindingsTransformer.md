@@ -19,8 +19,11 @@ A [ratio tap changer](./ratioTapChanger.md) and/or a [phase tap changer](./phase
 | $$b_{nom}$$ | double | S | yes | - | The nominal magnetizing susceptance at the side 2 of the transformer |
 | $$V_{1\ nom}$$ | double | kV | yes | - | The rated voltage at side 1 |
 | $$V_{2\ nom}$$ | double | kV | yes | - | The rated voltage at side 2 |
+| RatedS | double | MVA | no | - | The normal apparent power |
 
 Two windings transformers can also have [current limits](currentLimits.md) defined for each end.
+
+For a two windings transformer, the normal apparent power shall be identical at both sides 1 and 2.
 
 # Model
 Two windings transformer are modeled with the following equivalent $$\pi$$ model:
@@ -74,4 +77,18 @@ TwoWindingsTransformer twoWindingsTransformer = substation.newTwoWindingsTransfo
     .setRatedU1(24)
     .setRatedU2(385)
     .add();
+```
+
+# Extensions
+
+## Phase angle clock
+
+This extension is used to model the Vector Group of a two windings transformer. The phase angle clock is modeled at side 2 of a two windings transformer. The voltage phase angle displacement is represented with clock hours. The valid values are 0 to 11.
+
+| Attribute | Type | Unit | Required | Default value | Description |
+| --------- | ---- | ---- | -------- | ------------- | ----------- |
+| PhaseAngleClock | int [0-11] | hours | yes | - | The voltage phase angle displacement |
+
+```java
+transformer.addExtension(TwoWindingsTransformerPhaseAngleClock.class, new TwoWindingsTransformerPhaseAngleClock(transformer, 3));
 ```

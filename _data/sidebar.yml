@@ -6,6 +6,8 @@ menu:
       - name: "Installation"
         url: "/docs/getting-started.html#Installation"
         items:
+          - name: "Java library"
+            url: "/docs/installation/java-library.html"
           - name: "iTools packager"
             url: "/docs/installation/itools-packager.html"
           - name: "JavaFX packager"
@@ -19,9 +21,11 @@ menu:
     items:
       - name: "Loadflow"
         url: "/docs/user_stories/loadflow_tutorial.html"
+      - name: "Topology"
+        url: "/docs/user_stories/topology.html"
       - name: "Capacity calculation for RSC"
         url: "/docs/user_stories/capacity_calculation_rsc.html"
-      - name: "Tutorials"
+      - name: "Advanced tutorials"
         url: "/docs/tutorials/index.html"
 
   - name: "Functional documentation"
