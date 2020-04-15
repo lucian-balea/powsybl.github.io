@@ -7,20 +7,20 @@ The `dynamic-simulation` module is used to configure the dynamic simulation defa
 
 # Properties
 
-## default
-Use the `default` property to specify the name of the default dynamic simulation implementation.
+## default-impl-name
+Use the `default-impl-name` property to specify the name of the default dynamic simulation implementation.
 
 # Examples
 
 ## YAML
 ```yaml
 dynamic-simulation:
-    default: Mock
+    default-impl-name: Mock
 ```
 
 ## XML
 ```xml
 <dynamic-simulation>
-    <default>Mock</default>
+    <default-impl-name>Mock</default-impl-name>
 </dynamic-simulation>
 ```
