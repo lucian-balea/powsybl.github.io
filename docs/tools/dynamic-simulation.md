@@ -10,7 +10,7 @@ The `dynamic-simulation` command is used to run dynamic simulations on the netwo
 $> itools dynamic-simulation --help
 usage: itools [OPTIONS] dynamic-simulation --case-file <FILE> [--help] [-I <property=value>]
               [--import-parameters <IMPORT_PARAMETERS>] [--output-file <FILE>]
-              [--parameters-file <FILE>] [--skip-postproc]
+              [--parameters-file <FILE>]
 
 Available options are:
     --config-name <CONFIG_NAME>   Override configuration file name
@@ -23,8 +23,6 @@ Available arguments are:
     --import-parameters <IMPORT_PARAMETERS>       the importer configuation file
     --output-file <FILE>                          dynamic simulation results output path
     --parameters-file <FILE>                      dynamic simulation parameters as JSON file
-    --skip-postproc                               skip network importer post
-                                                  processors (when configured)
 
 ```
 
@@ -47,10 +45,6 @@ used, the results are printed to the console.
 ### parameters-file
 Use the `--parameters-file` parameter to specify a JSON configuration file. If this parameter is not set, the default
 configuration is used.
-
-### skip-postproc
-Use the `--skip-postproc` parameter to skip the importer's post processors. Read the [post processor](../iidm/importer/post-processor/index.md)
-documentation page to learn more about importer's post processors.
 
 # Configuration
 To run a dynamic simulation, one has to choose the implementation, follow the instructions at [dynamic simulation Configuration](../configuration/modules/dynamic-simulation.md).
